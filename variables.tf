@@ -24,15 +24,15 @@ variable "ipv6_cidr_block" {
 variable "map_public_ip_on_launch" {
   description = "Specify true to indicate that instances launched into the subnet should be assigned a public IP address"
   default     = false
-  type        = null
+  type        = bool
 }
 
 variable "assign_ipv6_address_on_creation" {
   description = "Specify true to indicate that network interfaces created in the specified subnet should be assigned an IPv6 address"
   default     = false
-  type        = null
+  type        = bool
 }
 
 variable "vpc_id" {
-  description = " The VPC ID"
+  description = "The VPC ID"
 }

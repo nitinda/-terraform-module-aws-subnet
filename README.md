@@ -70,19 +70,13 @@ _The variables required in order for the module to be successfully called from t
 
 |**_Variable_** | **_Description_** | **_Type_** | **_Argument Status_** |
 |:----|:----|-----:|:---:|
-| **_tags_** | _A mapping of tags to assign to the resource_ | _map(string)_ | **_Required_** |
-| **_tags_** | _A mapping of tags to assign to the resource_ | _map(string)_ | **_Required_** |
-| **_tags_** | _A mapping of tags to assign to the resource_ | _map(string)_ | **_Required_** |
-| **_tags_** | _A mapping of tags to assign to the resource_ | _map(string)_ | **_Required_** |
-| **_tags_** | _A mapping of tags to assign to the resource_ | _map(string)_ | **_Required_** |
-| **_tags_** | _A mapping of tags to assign to the resource_ | _map(string)_ | **_Required_** |
-| **_tags_** | _A mapping of tags to assign to the resource_ | _map(string)_ | **_Required_** |
-| **_tags_** | _A mapping of tags to assign to the resource_ | _map(string)_ | **_Required_** |
-| **_tags_** | _A mapping of tags to assign to the resource_ | _map(string)_ | **_Required_** |
-| **_tags_** | _A mapping of tags to assign to the resource_ | _map(string)_ | **_Required_** |
-| **_tags_** | _A mapping of tags to assign to the resource_ | _map(string)_ | **_Required_** |
-| **_tags_** | _A mapping of tags to assign to the resource_ | _map(string)_ | **_Required_** |
-| **_tags_** | _A mapping of tags to assign to the resource_ | _map(string)_ | **_Required_** |
+| **_availability\_zone_** | _The AZ for the subnet_ | _string_ | **_Optional <br/> (Default - null)_** |
+| **_availability\_zone\_id_** | _The AZ ID of the subnet_ | _string_ | **_Optional <br/> (Default - null)_** |
+| **_cidr\_block_** | _The CIDR block for the subnet_ | _string_ | **_Required_** |
+| **_ipv6\_cidr\_block_** | _The IPv6 network range for <br/> the subnet, in CIDR notation_ | _string_ | **_Optional <br/> (Default - null)_** |
+| **_map\_public\_ip\_on\_launch_** | _Specify true to indicate that <br/> instances launched into the subnet <br/> should be assigned a public IP address_ | _bool_ | **_Optional <br/> (Default - false)_** |
+| **_assign\_ipv6\_address\_on\_creation_** | _Specify true to indicate that <br/> network interfaces created in the <br/> specified subnet should be <br/> assigned an IPv6 address_ | _string_ | **_Optional <br/> (Default - false)_** |
+| **_vpc\_id_** | _The VPC ID_ | _string_ | **_Required_** |
 | **_tags_** | _A mapping of tags to assign to the resource_ | _map(string)_ | **_Required_** |
 
 
