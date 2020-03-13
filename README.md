@@ -52,9 +52,9 @@ module "vpc" {
   source = "git::https://github.com/nitinda/terraform-module-aws-vpc-subnet.git?ref=master"
 
 
-  cidr_block       = "10.0.0.0/16"
-  instance_tenancy = "dedicated"
-  tags             = {
+  vpc_id     = var.vpc_id
+  cidr_block = "172.2.0.0/24"
+  tags       = {
     Environment = "prod"
     Project     = "POC"
   }
