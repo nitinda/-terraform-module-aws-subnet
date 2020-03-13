@@ -62,6 +62,22 @@ module "vpc_subnet" {
 }
 ```
 
+```tf
+module "vpc_subnet" {
+  source = "git::https://github.com/nitinda/terraform-module-aws-vpc-subnet.git?ref=master"
+
+
+  vpc_id     = var.vpc_id
+  availability_zone = "eu-central-1c"
+  cidr_block = "172.2.0.0/24"
+  tags       = {
+    Environment = "prod"
+    Project     = "POC"
+  }
+
+}
+```
+
 ---
 
 ## _Inputs_
