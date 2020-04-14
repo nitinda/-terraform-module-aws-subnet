@@ -78,6 +78,40 @@ module "vpc_subnet" {
 }
 ```
 
+```tf
+module "public_1a" {
+  source = "git::https://github.com/nitinda/terraform-module-aws-vpc-subnet.git?ref=master"
+
+  vpc_id            = module.vpc.id
+  cidr_block        = "10.1.0.0/16"
+  availability_zone = "eu-central-1a"
+  tags       = merge(
+    var.common_tags,
+    {
+      Environment = "prod"
+      Name        = "vpc-subnet-public-1a"
+    }
+  )
+}
+```
+
+```tf
+module "public_1a" {
+  source = "git::https://github.com/nitinda/terraform-module-aws-vpc-subnet.git?ref=master"
+
+  vpc_id               = module.vpc.id
+  cidr_block           = "10.1.0.0/16"
+  availability_zone_id = "euc1-az2"
+  tags       = merge(
+    var.common_tags,
+    {
+      Environment = "prod"
+      Name        = "vpc-subnet-public-1a"
+    }
+  )
+}
+```
+
 ---
 
 ## _Inputs_
